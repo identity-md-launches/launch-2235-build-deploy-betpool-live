@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "BetPool",
+      "constructorArgs": ["0x6c4c78f2c3bdf4c4318fe305fb1c8bc1694d19b5"]
+    }
+  ],
+  "notes": "Deploys the accepted BetPool with the owner the brief names, 0x6c4c78f2c3bdf4c4318fe305fb1c8bc1694d19b5, written as a static address (the sole constructor argument, owner_). IMD and SHIFT token addresses, the NIGHTSHIFT fee splitter, the 5% losing-side fee, default per-bet limits and hard caps are fixed in the implementation. The result signer starts unset. Before markets, bets or signed settlements can be accepted, the owner must set the intended NIGHTSHIFT result signer using setSigner."
+}
