@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "BetPool",
+      "constructorArgs": ["$owner"]
+    }
+  ],
+  "notes": "Deploys the accepted BetPool with the named NIGHTSHIFT owner, 0x6c4c78f2c3bdf4c4318fe305fb1c8bc1694d19b5, resolved through $owner. IMD and SHIFT token addresses, the NIGHTSHIFT fee splitter, the 5% losing-side fee, default per-bet limits and hard caps are fixed in the implementation. The result signer starts unset. Before markets, bets or signed settlements can be accepted, the owner must set the intended NIGHTSHIFT result signer using setSigner."
+}
